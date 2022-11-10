@@ -215,7 +215,7 @@
     </main>
     <footer class="footer">
       <div class="container flex-wrapper">
-        <div class="logo-adress">
+        <div class="logo-adress-box">
           <a href="./index.html" lang="en" class="logo logo-footer"
             >Web<span class="logo-part-footer">Studio</span></a
           >
@@ -269,6 +269,24 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <div>
+            <label class="form-label" for="mail">Підпишіться на розсилку</label>
+            <input
+              class="form-input"
+              name="user_mail"
+              type="email"
+              id="mail"
+              placeholder="E-mail"
+            />
+          </div>
+          <button type="submit" class="footer-form-btn">
+            Підписатися
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
