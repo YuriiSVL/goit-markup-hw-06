@@ -662,6 +662,11 @@ ul {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .form-input::placeholder {
@@ -732,6 +737,11 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
+
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+
   transform: translate(-50%, -50%) perspective(1000px) rotateX(0deg);
 
   min-width: 528px;
