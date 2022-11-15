@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <!-- HEADER ---------------------------------- -->
+    <!-- HEADER -->
     <header class="header">
       <div class="container header-cont">
         <nav class="site-nav">
@@ -51,12 +51,12 @@
       </div>
     </header>
     <main>
-      <!-- HERO - section ------------------------------------------------ -->
+      <!-- HERO - section -->
       <section class="section hero">
         <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button btn-primary" data-modal-open>Замовити послугу</button>
       </section>
-      <!-- FEATURES - section-------------------------------------------- -->
+      <!-- FEATURES - section -->
       <section class="section features">
         <div class="container">
           <h2 class="title visually-hidden">Особливості</h2>
@@ -100,7 +100,7 @@
           </ul>
         </div>
       </section>
-      <!-- WHAT WE DO - section---------------------------------- -->
+      <!-- WHAT WE DO - section -->
       <section class="section doing">
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
@@ -120,7 +120,7 @@
           </ul>
         </div>
       </section>
-      <!-- OUR TEAM - section----------------------------------- -->
+      <!-- OUR TEAM - section -->
       <section class="section team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
@@ -276,7 +276,7 @@
           </ul>
         </div>
       </section>
-      <!-- CLIENTS-section ------------------------------- -->
+      <!-- CLIENTS-section -->
       <section class="section clients">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
@@ -327,15 +327,14 @@
         </div>
       </section>
     </main>
-    <!-- FOOTER ---------------------------------------- -->
+    <!-- FOOTER  -->
     <footer class="footer">
       <div class="container flex-wrapper">
         <div class="logo-adress-box">
           <a href="./index.html" lang="en" class="logo logo-footer"
             >Web<span class="logo-part-footer">Studio</span></a
           >
-
-          <address clsass="address">
+          <address class="address">
             <ul class="address-list">
               <li>
                 <a
@@ -384,28 +383,29 @@
             </li>
           </ul>
         </div>
-        <!-- FOOTER FORM -------------------------------------------------- -->
-        <form class="footer-form">
-          <div>
-            <label class="footer-form-label" for="mail">Підпишіться на розсилку</label>
+        <!-- FOOTER FORM  -->
+        <div class="footer-subscribe">
+          <b class="footer-form-title">Підпишіться на розсилку</b>
+          <form class="footer-form">
             <input
               class="footer-form-input"
               name="user_mail"
               type="email"
               id="mail"
               placeholder="E-mail"
+              aria-label="введіть електронну адресу"
             />
-          </div>
-          <button type="submit" class="footer-form-btn">
-            Підписатися
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+            <button type="submit" class="footer-form-btn">
+              Підписатися
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <!-- MODAL WINDOW -------------------------------------------- -->
+    <!-- MODAL WINDOW -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-close-button" data-modal-close>
@@ -414,7 +414,7 @@
           </svg>
         </button>
         <b class="modal-title">Залиште свої дані, ми вам передзвонимо</b>
-        <!-- MODAL FORM -------------------------------------------- -->
+        <!-- MODAL FORM -->
         <form class="modal-form" autocomplete="off">
           <label class="modal-form-field">
             <span class="modal-form-label">Ім'я</span>
