@@ -893,6 +893,11 @@ ul {
   min-width: 400px;
 }
 
+.modal-agreement-checkbox {
+  display: block;
+  margin-right: 8px;
+}
+
 .modal-check-border {
   display: inline-block;
 
@@ -907,19 +912,6 @@ ul {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-agreement-checkbox {
-  display: block;
-  margin-right: 8px;
-}
-
-.modal-agreement-checkbox:checked ~ .modal-check-icon {
-  opacity: 1;
-}
-
-.modal-agreement-checkbox:checked + .modal-check-border {
-  opacity: 0;
-}
-
 .modal-check-icon {
   position: absolute;
   top: 50%;
@@ -929,6 +921,14 @@ ul {
   cursor: pointer;
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-agreement-checkbox:checked ~ .modal-check-icon {
+  opacity: 1;
+}
+
+.modal-agreement-checkbox:checked + .modal-check-border {
+  opacity: 0;
 }
 
 .modal-agreement-link {
